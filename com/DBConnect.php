@@ -10,7 +10,7 @@ class DBConnect
 {
     const host = '120.77.149.74';
     const user = 'root';
-    const password = '';
+    const password = '123456';
 
     private $mysql_con;
 
