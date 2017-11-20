@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1666e7e-d268-40d4-8b3e-9a2f02ecc0b6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/phprpc.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/com/DBConnect.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/com/TcpSocket.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/commands/logon_log.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/commands/pay_log.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frame/Command.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frame/Hunter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frame/Message.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/init.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/commands/sum_logon.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/commands/sum_pay.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/commands/test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/com/DBConnect.php" afterPath="$PROJECT_DIR$/com/DBConnect.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/com/TcpSocket.php" afterPath="$PROJECT_DIR$/com/TcpSocket.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commands/logon_log.php" afterPath="$PROJECT_DIR$/commands/logon_log.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commands/pay_log.php" afterPath="$PROJECT_DIR$/commands/pay_log.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/init.php" afterPath="$PROJECT_DIR$/init.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/upload.sh" afterPath="$PROJECT_DIR$/upload.sh" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,25 +30,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commands/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pay_log.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commands/pay_log.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="69" lean-forward="false" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
+            <state relative-caret-position="165">
+              <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
-                <marker date="1508068374000" expanded="true" signature="380:470" ph="INSERT INTO pocket_log.pay_log... " />
-                <marker date="1508068374000" expanded="true" signature="380:547" ph="INSERT INTO pocket_log.pay_log... " />
               </folding>
             </state>
           </provider>
@@ -59,9 +45,21 @@
       <file leaf-file-name="DBConnect.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/com/DBConnect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TcpSocket.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/com/TcpSocket.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="990">
+              <caret line="66" column="9" lean-forward="true" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+              <folding>
+                <element signature="e#7#88#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,6 +69,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>init</find>
+      <find>insert logon error</find>
+      <find>$_GET</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -79,11 +79,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/upload.sh" />
-        <option value="$PROJECT_DIR$/init.php" />
         <option value="$PROJECT_DIR$/frame/Hunter.php" />
+        <option value="$PROJECT_DIR$/upload.sh" />
+        <option value="$PROJECT_DIR$/../upload/upload.sh" />
         <option value="$PROJECT_DIR$/commands/logon_log.php" />
         <option value="$PROJECT_DIR$/commands/pay_log.php" />
+        <option value="$PROJECT_DIR$/../flashupload/index.php" />
+        <option value="$PROJECT_DIR$/commands/look_pay.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/commands/sum_logon.php" />
+        <option value="$PROJECT_DIR$/commands/sum_pay.php" />
+        <option value="$PROJECT_DIR$/init.php" />
+        <option value="$PROJECT_DIR$/commands/test.php" />
+        <option value="$PROJECT_DIR$/com/TcpSocket.php" />
         <option value="$PROJECT_DIR$/com/DBConnect.php" />
       </list>
     </option>
@@ -98,7 +106,10 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="824" />
+    <option name="height" value="836" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -115,6 +126,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -158,7 +170,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -234,15 +245,25 @@
       <option name="presentableId" value="Default" />
       <updated>1508063462252</updated>
       <workItem from="1508063463374" duration="4463000" />
-      <workItem from="1508068582114" duration="22000" />
+      <workItem from="1508068582114" duration="52000" />
+      <workItem from="1508118324511" duration="6004000" />
+      <workItem from="1508135898970" duration="2072000" />
+      <workItem from="1510710517684" duration="5000" />
+      <workItem from="1510710767710" duration="848000" />
+      <workItem from="1510975458637" duration="5149000" />
+      <workItem from="1511008435398" duration="407000" />
+      <workItem from="1511094811757" duration="879000" />
+      <workItem from="1511143524288" duration="730000" />
+      <workItem from="1511144573247" duration="203000" />
+      <workItem from="1511144971430" duration="1036000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4485000" />
+    <option name="totallyTimeSpent" value="21848000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="824" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="836" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -273,10 +294,121 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/commands/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/sum_pay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510985846000" expanded="true" signature="179:248" ph="SELECT * FRO... pay_log" />
+            <marker date="1510985846000" expanded="true" signature="425:512" ph="SELECT user_... pay_log" />
+            <marker date="1510985846000" expanded="true" signature="425:562" ph="SELECT user_... pay_log" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/sum_pay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510985846000" expanded="true" signature="179:248" ph="SELECT * FRO... pay_log" />
+            <marker date="1510985846000" expanded="true" signature="425:512" ph="SELECT user_... pay_log" />
+            <marker date="1510985846000" expanded="true" signature="425:562" ph="SELECT user_... pay_log" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../flashupload/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/logon_log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="52" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+            <marker date="1508137858000" expanded="true" signature="534:610" ph="INSERT INTO pocket_log.logon_log... " />
+            <marker date="1508137858000" expanded="true" signature="534:665" ph="INSERT INTO pocket_log.logon_log... " />
+            <marker date="1508137858000" expanded="true" signature="534:684" ph="INSERT INTO pocket_log.logon_log... " />
+            <marker date="1508137858000" expanded="true" signature="534:705" ph="INSERT INTO pocket_log.logon_log... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/pay_log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1508137905000" expanded="true" signature="557:656" ph="INSERT INTO pocket_log.pay_log... " />
+            <marker date="1508137905000" expanded="true" signature="557:769" ph="INSERT INTO pocket_log.pay_log... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/logon_log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="52" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+            <marker date="1508137858000" expanded="true" signature="534:610" ph="INSERT INTO pocket_log.logon_log... " />
+            <marker date="1508137858000" expanded="true" signature="534:665" ph="INSERT INTO pocket_log.logon_log... " />
+            <marker date="1508137858000" expanded="true" signature="534:684" ph="INSERT INTO pocket_log.logon_log... " />
+            <marker date="1508137858000" expanded="true" signature="534:705" ph="INSERT INTO pocket_log.logon_log... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/pay_log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <marker date="1508137905000" expanded="true" signature="557:656" ph="INSERT INTO pocket_log.pay_log... " />
+            <marker date="1508137905000" expanded="true" signature="557:769" ph="INSERT INTO pocket_log.pay_log... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -290,47 +422,18 @@
         <state relative-caret-position="225">
           <caret line="20" column="69" lean-forward="true" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
           <folding>
-            <element signature="e#6#87#0#PHP" expanded="true" />
-            <marker date="1508068374000" expanded="true" signature="380:470" ph="INSERT INTO pocket_log.pay_log... " />
-            <marker date="1508068374000" expanded="true" signature="380:547" ph="INSERT INTO pocket_log.pay_log... " />
+            <marker date="1508137905000" expanded="true" signature="557:656" ph="INSERT INTO pocket_log.pay_log... " />
+            <marker date="1508137905000" expanded="true" signature="557:769" ph="INSERT INTO pocket_log.pay_log... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tcp.php" />
     <entry file="file://$PROJECT_DIR$/command/LoginAction.php" />
-    <entry file="file://$PROJECT_DIR$/upload.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="48" lean-forward="false" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_3.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
           <caret line="848" column="9" lean-forward="false" selection-start-line="848" selection-start-column="9" selection-end-line="848" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/Command.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/_types.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="105" column="13" lean-forward="false" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame/Hunter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="40" column="25" lean-forward="true" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -345,62 +448,161 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
           <caret line="1577" column="74" lean-forward="false" selection-start-line="1577" selection-start-column="65" selection-end-line="1577" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/init.php">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/_types.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138">
-          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        <state relative-caret-position="-858">
+          <caret line="105" column="13" lean-forward="false" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../upload/upload.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/WebServer/Documents/downloads/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="56" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="56" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_5.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="855" column="9" lean-forward="false" selection-start-line="855" selection-start-column="9" selection-end-line="855" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/Command.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/look_pay.php" />
+    <entry file="file://$PROJECT_DIR$/../flashupload/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame/Hunter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="44" column="27" lean-forward="false" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/commands/logon_log.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="24" selection-end-column="1" />
+        <state relative-caret-position="150">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="28" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
-            <marker date="1508068161000" expanded="true" signature="380:484" ph="INSERT INTO pocket_log.logon_log... " />
-            <marker date="1508068161000" expanded="true" signature="380:497" ph="INSERT INTO pocket_log.logon_log... " />
+            <marker date="1508137858000" expanded="true" signature="534:610" ph="INSERT INTO pocket_log.logon_log... " />
+            <marker date="1508137858000" expanded="true" signature="534:665" ph="INSERT INTO pocket_log.logon_log... " />
+            <marker date="1508137858000" expanded="true" signature="534:684" ph="INSERT INTO pocket_log.logon_log... " />
+            <marker date="1508137858000" expanded="true" signature="534:705" ph="INSERT INTO pocket_log.logon_log... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/commands/sum_pay.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com/TcpSocket.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="450">
+          <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+          <folding>
+            <marker date="1510985846000" expanded="true" signature="179:248" ph="SELECT * FRO... pay_log" />
+            <marker date="1510985846000" expanded="true" signature="425:512" ph="SELECT user_... pay_log" />
+            <marker date="1510985846000" expanded="true" signature="425:562" ph="SELECT user_... pay_log" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/commands/pay_log.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="69" lean-forward="false" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
+          <caret line="25" column="9" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="25" selection-end-column="9" />
+          <folding>
+            <marker date="1508137905000" expanded="true" signature="557:656" ph="INSERT INTO pocket_log.pay_log... " />
+            <marker date="1508137905000" expanded="true" signature="557:769" ph="INSERT INTO pocket_log.pay_log... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/sum_logon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
-            <marker date="1508068374000" expanded="true" signature="380:470" ph="INSERT INTO pocket_log.pay_log... " />
-            <marker date="1508068374000" expanded="true" signature="380:547" ph="INSERT INTO pocket_log.pay_log... " />
+            <marker date="1510985479000" expanded="true" signature="297:372" ph="SELECT * FRO... logon_log" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/TcpSocket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="66" column="9" lean-forward="true" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+          <folding>
+            <element signature="e#7#88#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/com/DBConnect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding />
         </state>
       </provider>

@@ -37,8 +37,10 @@ class DBConnect
         if (!$this->mysql_con)
         {
             die('Could not connect: ' . mysqli_error());
+            //echo "mysql is close";
         }else{
             mysqli_set_charset($this->mysql_con,"utf-8");
+            $this->query("set names utf8");
             //echo "mysql content"."<br>";
         }
     }

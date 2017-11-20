@@ -9,6 +9,7 @@
 header("Content-type: text/html; charset=utf-8");
 
 require("com/DBConnect.php");
+require("com/TcpSocket.php");
 require("frame/Hunter.php");
 
 //全局参数
@@ -29,9 +30,9 @@ function PHP_POST($key)
     return isset($_POST[$key])?$_POST[$key]:null;
 }
 
-function GET_VALUE($data, $key)
+function GET_VALUE($data, $key, $def)
 {
-    return isset($data[$key])?$data[$key]:null;
+    return isset($data[$key])?$data[$key]:$def;
 }
 
 function PHP_DUMP($data)

@@ -8,10 +8,13 @@
 //导入包
 require "init.php";
 //处理
-Hunter::getInstance()->Invoker($_GET);
-
-
-//require "phpmailer/test.php";
-
-
-
+try{
+    if(sizeof($_POST) > 0){
+        Hunter::getInstance()->Invoker($_POST);
+    }else{
+        Hunter::getInstance()->Invoker($_GET);
+    }
+}catch (Exception $e){
+    echo $e->getMessage();
+    exit();
+}

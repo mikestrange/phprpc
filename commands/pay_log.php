@@ -10,13 +10,15 @@
 function action($data){
     if(isset($data["uid"])){
         $user_id = $data["uid"];
-        //$app_id = $data["appid"];
-        //$app_type = $data["apptype"];
-        //$desc_id = $data["desc"];
-        //$app_ip = $data["ip"];
-        //$app_mac = $data["mac"];
-        $sql = "INSERT INTO pocket_log.pay_log (user_id, app_id, app_type, sub_money, pay_num, ip, desc_t)".
-            "VALUES ('$user_id','101','2','999999','6','127.0.0.1','test')";
+        $app_id = GET_VALUE($data, "appid", 100);
+        $app_type = GET_VALUE($data, "apptype", 1);
+        $desc_t = GET_VALUE($data, "desc", "");
+        $addr_ip = GET_VALUE($data, "ip", "localhost");
+        $sub_money = GET_VALUE($data, "money", 0);
+        $pay_num = GET_VALUE($data, "num", 0);
+        $version = GET_VALUE($data, "ver", "0.0.0");
+        $sql = "INSERT INTO pocket_log.pay_log (user_id, app_id, app_type, sub_money, pay_num, ip, desc_t, version)".
+            "VALUES ('$user_id','$app_id','$app_type','$sub_money','$pay_num','$addr_ip','$desc_t','$version')";
         if(DBConnect::getInstance()->query($sql)){
             ECHO_PUSH(array("flag"=>1, "msg"=>"insert pay succeed"));
         }else{
